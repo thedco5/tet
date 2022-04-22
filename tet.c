@@ -166,7 +166,7 @@ void dlt_cln(char name[])
     fprintf(file, "%s", new);
     fclose(file);
     fclose(stream);
-    stream = fopen("stream", "w");
+    stream = fopen("stream", "w"); // clears the stream
     fclose(stream);
     start();
 }
@@ -191,7 +191,7 @@ void list()
         printf("   - \'%s\' at %s\n", first, second);
     }
     fclose(stream);
-    stream = fopen("stream", "w");
+    stream = fopen("stream", "w"); // clears the stream
     fclose(stream);
     start();
 }
