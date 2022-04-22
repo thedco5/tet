@@ -172,7 +172,7 @@ void dlt_cln(char name[])
 }
 void list()
 {
-    char files[1024], first[1024], second[1023];
+    char files[1024], first[1024], second[1024];
     FILE *stream = fopen("stream", "w");
     fprintf(stream, "%s", fconvstr("address_file.txt"));
     fclose(stream);
